@@ -1,4 +1,4 @@
-chrome-md5
+MD5 Hasher
 ==========
 
-MD5 Hasher 
+Chrome extension for generating MD5 hashes.

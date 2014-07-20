@@ -1,0 +1,86 @@
+<html>
+<head>
+    <title>Page</title>
+    <style>
+        body {
+            background: #d07e7c;
+            font: 400 100% "Open Sans",Helvetica,Arial,Verdana,sans-serif;
+            padding: 0;
+            margin:  0;
+        }
+        .wrapper {
+            width: 400px;
+            margin: 0 auto;
+            padding: 10px 20px 20px 20px;
+        }
+        .inner-wrapper {
+            background-color: white;
+            padding: 20px;
+        }
+        input {
+            width: 100%;			
+            background: #eee 95% center no-repeat;
+            border: none;
+            color: #555;
+            -webkit-appearance: none;
+            cursor: auto;
+			font-family: Arial;
+			font-size: 16px;
+			margin: 2px 0px 5px 0;
+			padding: 14px 0px 14px 14px;
+			height: 51px;
+		}
+		input#hash_times {
+			width: 30%;
+			height: 24px;
+		}
+        h1 {
+            color: white;
+            background-color: #dc322f;
+            vertical-align: middle;
+            zoom: 1;
+            font-size: 1.125em;
+            line-height: normal;
+            padding: 8px 20px;
+            margin-bottom: 0px;
+            text-decoration: none;
+        }
+        p {
+            margin-top: 0px;
+        }
+		
+		.blingbling {
+
+cursor: auto;
+
+
+font-family: Arial;
+font-size: 16px;
+
+height: 51px;
+
+
+margin: 2px 0px 5px 0;
+padding: 14px 0px 14px 14px;
+
+
+}
+
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <h1>MD5 Hasher</h1>
+
+    <div class="inner-wrapper">
+        <input id="hash_input" placeholder="hash me this" type="password" autofocus></input>
+        <input id="hash_times" placeholder="number of" value="5"></input>
+        <span>times hashed</span>
+        <input type="text" id="hash_result" placeholder="hashed shizzle"></input>
+    </div>
+</div>
+
+<script type="text/javascript" src="customscript.js"></script>
+
+</body>
+</html>
