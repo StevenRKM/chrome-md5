@@ -285,7 +285,14 @@ function md5 (str) {
 // do the hashing
 function hash() {
     // check times input
-	var times = parseInt(document.getElementById("hash_times").value);
+	var times = document.getElementById("hash_times").value;
+	if(times=="") {
+		document.getElementById("hash_times").value = "";
+		document.getElementById("hash_result").value = "";
+		localStorage["hash_times"] = "";
+	}
+	
+	times = parseInt(times);
 	if(isNaN(times) || times<=0 || document.getElementById("hash_times").value != times + "") {
 		document.getElementById("hash_times").value = localStorage["hash_times"];
 		return;
@@ -295,9 +302,11 @@ function hash() {
 	localStorage["hash_times"] = times;
 	
 	// calculate result
-	var result = document.getElementById("hash_input").value
-	if(result == "")
+	var result = document.getElementById("hash_input").value;
+	if(result == "") {
+		document.getElementById("hash_result").value = "";
 		return;
+	}
 
 	// do the hashing
 	for(var i=0; i<times; i++) {
